@@ -16,6 +16,13 @@ Once you've downloaded the files, unzip them to a folder on your drive.
 ## Automatic installation - Windows
 Navigate to the folder with the script, and run windows.bat
 
+## Automatic installation - Linux/MacOS
+Open the terminal, and navigate to the folder with the script.
+Now run
+```
+chmod 744 unix.sh # Allow file to run
+./unix.sh
+```
 
 ## Manual installtion - Windows/Linux/Mac OS
 Now, you need to install the packages the script depends upon:
