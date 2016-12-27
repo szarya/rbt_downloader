@@ -5,6 +5,7 @@ A small python3 script that downloads all the user owned videos from Ramits Brai
 This is a python3 script.
 If you don't have python3 installed, download and install it from:
 https://www.python.org/downloads/
+**Be sure to tick the Add python to PATH checkbox during installation**
 
 ## Installation
 You can download this script as a zip file, or just clone it from git. 
