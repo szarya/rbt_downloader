@@ -13,6 +13,11 @@ The link to the download is in the upper left corner of the page.
 Once you've downloaded the files, unzip them to a folder on your drive.
 *Note that the script will download the files into this folder, so make sure that you have enough free storage - the average episode takes about 1.5GB of space*
 
+## Automatic installation - Windows
+Navigate to the folder with the script, and run windows.bat
+
+
+## Manual installtion - Windows/Linux/Mac OS
 Now, you need to install the packages the script depends upon:
 Open the terminal, and navigate to the folder with the script.
 Now run:
