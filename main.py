@@ -32,7 +32,14 @@ def get_episodes():
     for ep in soup.find_all("span",string='Issue'):
         title_parts = list(filter(None,ep.parent.parent.text.split('\n')))
         episode_num = title_parts[0][6:]
-        title,_, author = re.split(' (--|—) ',title_parts[1])
+
+        title_parts = re.split(' (--|—|-) ',title_parts[1])
+        if len(title_parts) == 3:
+            title, _, author = title_parts
+        else:
+            title =title_parts [0]
+            author = ''
+
         link = ep.parent.parent.find('a')['href']
         episodes.append((episode_num, title, author, link))
 
