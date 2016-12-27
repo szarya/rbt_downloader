@@ -13,6 +13,8 @@ The link to the download is in the upper left corner of the page.
 Once you've downloaded the files, unzip them to a folder on your drive.
 *Note that the script will download the files into this folder, so make sure that you have enough free storage - the average episode takes about 1.5GB of space*
 
+Open settings.py in any text editor and replace [YOUR_EMAIL] and [YOUR_PASSWORD] with your RBT email and password.
+
 ## Automatic installation - Windows
 Navigate to the folder with the script, and run windows.bat
 
@@ -24,7 +26,7 @@ chmod 744 unix.sh # Allow file to run
 ./unix.sh
 ```
 
-## Manual installtion - Windows/Linux/Mac OS
+## Manual installation - Windows
 Now, you need to install the packages the script depends upon:
 Open the terminal, and navigate to the folder with the script.
 Now run:
@@ -37,6 +39,19 @@ Now, open settings.py in any text editor and replace [YOUR_EMAIL] and [YOUR_PASS
 Finally, you can start the script by running:
 ```
 python main.py
+```
+
+## Manual installation - Linux/MacOS
+Now, you need to install the packages the script depends upon:
+Open the terminal, and navigate to the folder with the script.
+Now run:
+```
+virtualenv -p /usr/bin/python3 venv
+venv/bin/pip install -r requirements.txt
+```
+Finally, you can start the script by running:
+```
+venv/bin/python main.py
 ```
 
 The script should take several hours to complete, depending on your internet connection.
